@@ -301,9 +301,9 @@
         </div>
       </div>
     </section>
-    <section class="brdr py-[100px] px-[30px] flex flex-col gap-[120px]">
-      <div class="brdr flex items-end justify-between">
-        <h3 class="brdr text-[120px] font-semibold leading-[90%] text-start">
+    <section class="py-[100px] px-[30px] flex flex-col gap-[120px]">
+      <div class="flex items-end justify-between">
+        <h3 class="text-[120px] font-semibold leading-[90%] text-start">
           What <br />
           I Bring
         </h3>
@@ -312,7 +312,9 @@
           web solutions.
         </p>
       </div>
-      <div class="brdr">h</div>
+      <div class="flex justify-end">
+        <ul class="w-[60%]" id="skills_list"></ul>
+      </div>
     </section>
   </body>
 </html>
@@ -483,5 +485,142 @@
     p.innerText = title;
     div.appendChild(p);
     skills_section.appendChild(div);
+  });
+  const skillsData = [
+    {
+      title: "Frontend Development",
+      description: "Building interactive and responsive user interfaces.",
+      image: "./assets/images/frontend.png",
+      subSkills: [
+        "HTML / CSS / JS",
+        "React.js",
+        "Tailwind CSS",
+        "Redux Toolkit",
+        "UI/UX Design",
+      ],
+    },
+    {
+      title: "Backend Development",
+      description: "Server-side logic, APIs, and database management.",
+      image: "./assets/images/backend.png",
+      subSkills: [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST APIs",
+        "Authentication",
+      ],
+    },
+    {
+      title: "DevOps & Deployment",
+      description:
+        "Deploying, monitoring, and scaling applications efficiently.",
+      image: "./assets/images/devops.png",
+      subSkills: [
+        "Linux Server Management",
+        "Nginx / PM2",
+        "CI/CD (GitHub Actions)",
+        "Docker Basics",
+        "Cloud (Render / Vercel / Netlify)",
+      ],
+    },
+    {
+      title: "Real-Time & Integrations",
+      description:
+        "Implementing real-time features and integrating third-party services.",
+      image: "./assets/images/meeting.png",
+      subSkills: [
+        "Socket.IO",
+        "WebSockets",
+        "Payment Gateways (Razorpay, Stripe)",
+        "Webhooks",
+        "Puppeteer Automation",
+      ],
+    },
+    {
+      title: "Project & Code Management",
+      description: "Managing scalable codebases and collaborative workflows.",
+      image: "./assets/images/meeting.png",
+      subSkills: [
+        "Git & GitHub",
+        "VS Code Extension Development",
+        "Chrome Extension Development",
+        "Monorepo Structure",
+        "Team Collaboration Tools",
+      ],
+    },
+  ];
+
+  const skillsList = document.getElementById("skills_list");
+
+  skillsData.forEach((skill, index) => {
+    const li = document.createElement("li");
+    li.className =
+      "flex flex-col gap-[28px] py-[28px] border-t border-border h-[101px] overflow-hidden transition-all duration-300 ease-in-out";
+
+    li.innerHTML = `
+    <div class="flex gap-[90px] flex-1 cursor-pointer" data-index="${index}">
+      <div class="flex gap-1 items-start">
+        ${Array.from({ length: 5 })
+          .map(
+            (_, i) =>
+              `<span class="aspect-square w-[10px] rounded-full bg-white block opacity-[${
+                i <= index ? "1" : "0.3"
+              }]"></span>`
+          )
+          .join("")}
+      </div>
+      <div class="flex-1 flex items-center justify-between">
+        <div class="flex-1">
+          <p class="text-lg font-semibold normal-case tracking-[1px]">
+            ${skill.title}
+          </p>
+          <p class="text-xs text-gray tracking-[1px]">
+            ${skill.description}
+          </p>
+        </div>
+        <div id="dropdown_Icon" class="transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down">
+            <path d="m6 9 6 6 6-6" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="ml-[164px] py-[24px] border-t border-border flex gap-[24px] items-center">
+      <div class="h-[160px] w-[272px]">
+        <img class="h-full w-full object-cover rounded-[10px]" src="${
+          skill.image
+        }" alt="" />
+      </div>
+      <ul class="flex flex-col gap-3">
+        ${skill.subSkills
+          .map(
+            (sub) => `
+          <li class="text-xs text-gray font-medium flex items-center gap-[10px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check">
+              <rect width="18" height="18" x="3" y="3" rx="2" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <p>${sub}</p>
+          </li>`
+          )
+          .join("")}
+      </ul>
+    </div>
+  `;
+
+    skillsList.appendChild(li);
+  });
+
+  document.querySelectorAll("#skills_list > li").forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("h-[312px]!");
+      item.querySelector("#dropdown_Icon > svg").classList.toggle("rotate-180");
+    });
   });
 </script>
