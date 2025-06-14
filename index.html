@@ -21,7 +21,7 @@
     </style>
   </head>
   <body
-    class="bg-black text-white uppercase m-auto w-full max-w-[1493px] flex flex-col gap-[30px]"
+    class="bg-black text-white uppercase font-medium m-auto w-full max-w-[1493px] flex flex-col gap-[30px]"
   >
     <!-- Menu Section -->
     <section
@@ -118,7 +118,7 @@
         >
       </nav>
     </header>
-
+    <!-- Hero Section -->
     <section class="flex flex-col gap-[60px]">
       <div class="relative px-[30px]">
         <div class="max-w-full overflow-hidden">
@@ -148,7 +148,10 @@
             />
             <circle cx="12" cy="10" r="3" />
           </svg>
-          <p class="text-xs font-medium">Pune Maharashtra</p>
+          <p class="text-xs font-medium text-center">
+            Pune Maharashtra <br />
+            <span class="text-gray">India</span>
+          </p>
         </div>
         <div class="flex flex-col items-center gap-2">
           <svg
@@ -172,7 +175,10 @@
               d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"
             />
           </svg>
-          <p class="text-xs font-medium">immediate joiner</p>
+          <p class="text-xs font-medium text-center">
+            immediate joiner <br />
+            <span class="text-gray">Tommorrow As Well</span>
+          </p>
         </div>
         <div class="flex flex-col items-center gap-2">
           <svg
@@ -190,7 +196,10 @@
             <rect width="18" height="12" x="3" y="4" rx="2" ry="2" />
             <line x1="2" x2="22" y1="20" y2="20" />
           </svg>
-          <p class="text-xs font-medium">Software Developer</p>
+          <p class="text-xs font-medium text-center">
+            Software Developer <br />
+            <span class="text-gray">BCA</span>
+          </p>
         </div>
       </div>
       <!--Hero Image  -->
@@ -202,22 +211,27 @@
         />
       </div>
     </section>
+    <!-- Approch Section -->
     <section class="py-[100px] px-[30px] flex flex-col gap-[120px]">
       <div class="flex flex-col gap-[140px]">
         <div class="flex items-center justify-between text-xs">
           <p>01</p>
-          <p>Pune Maharashtra</p>
-          <p class="text-gray">Jan 2024 - Jun 2025</p>
+          <p>//Approach</p>
+          <p class="text-gray">Three Phases</p>
         </div>
         <div class="flex flex-col justify-between items-center gap-[30px]">
-          <h3 class="text-[90px] font-semibold leading-[90%] text-center">
-            MERN Stack Developer At Dreams International
+          <h3
+            class="flex text-[90px] font-semibold leading-[90%] text-center overflow-hidden"
+          >
+            I'm Vishwajeet Patil Based in Pune, Maharashtra, <br />
+            India
           </h3>
           <p
             class="w-[40%] text-center normal-case text-lg text-gray tracking-[2px]"
           >
-            Leading projects across web development, mentoring juniors, and
-            driving end-to-end solutions.
+            On a Mission to Build Intelligent, Real-Time, and User-Centric
+            Software Solutions That Empower People and Businesses to Succeed in
+            the Digital Age.
           </p>
           <div class="relative w-[50%] flex items-center justify-between">
             <hr class="absolute z-[-1] text-border w-full h-[1px]" />
@@ -233,89 +247,201 @@
       </div>
       <div id="cards-container" class="flex"></div>
     </section>
+    <!-- Skill Cards Section -->
     <section
       id="skills_section"
       class="border-y border-border py-[20px] flex overflow-x-auto gap-4 scroll-smooth whitespace-nowrap transition-all duration-300 ease-in-out"
       style="scrollbar-width: none"
     ></section>
-    <section class="py-[100px] px-[30px] flex flex-col gap-[120px]">
-      <div class="flex flex-col gap-[140px]">
-        <div class="flex flex-col justify-between items-center gap-[50px]">
-          <h3 class="text-[90px] font-semibold leading-[90%] text-center">
-            More About <br />
-            <span class="text-[120px]">Vishwajeet</span>
-          </h3>
-          <div class="">
-            <div class="w-[500px] rounded-[10px] overflow-hidden">
-              <img
-                class="h-full w-full object-cover"
-                src="./assets/images/vishwajeet_portfolio.png"
-                alt=""
-              />
+    <!-- Experience -->
+    <section class="pt-[120px] pb-[100px] px-[30px] flex flex-col gap-[120px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>02</p>
+        <p>//Experience</p>
+        <p class="text-gray">Since 2024</p>
+      </div>
+      <div class="flex justify-between">
+        <div class="">
+          <h3 class="text-[34px] font-semibold">Experience</h3>
+        </div>
+        <div class="w-[61%] flex flex-col gap-[60px]">
+          <hr class="border border-border" />
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-semibold">Dreams International</h5>
+            <div class="flex items-center justify-between">
+              <p class="text-xs tracking-[1px]">MERN Stack Developer</p>
+              <p class="text-xs text-gray tracking-[1px]">
+                Jan 2024 - Jun 2025
+              </p>
             </div>
-          </div>
-          <div class="flex flex-col gap-[30px] items-center">
-            <p
-              class="text-2xl font-semibold text-center w-[70%] leading-none tracking-[1px]"
-            >
-              I'M A VERSATILE FULL-STACK MERN DEVELOPER FROM INDIA.<br />
-              MY PASSION FOR CRAFTING SCALABLE SYSTEMS, CLEAN CODE, AND
-              INTUITIVE USER EXPERIENCES SHINES THROUGH IN EVERY PROJECT I
-              DELIVER.
-            </p>
-            <p
-              class="normal-case text-lg text-gray w-[65%] text-center leading-[17px] tracking-[2px]"
-            >
-              Whether that's extending capabilities with Chrome plugins,
-              automating workflows with no‑code/AI tools, or architecting
-              scalable systems. With an insatiable curiosity, I embrace
-              unconventional approaches, believing that the right perspective
-              can elevate code into meaningful experiences that truly resonate.
+            <p class="tracking-none text-lg text-gray normal-case">
+              Led both frontend and backend development, integrated payment
+              gateways and real-time systems, mentored junior developers, and
+              played a key role in delivering scalable SaaS products for global
+              clients.
             </p>
           </div>
-          <a
-            href="#contact"
-            class="border flex items-center gap-2 hover:text-black border-white py-3 px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-['Contact Now'] before:text-black before:h-full before:w-full before:bg-white"
-            >Resume
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-file-text-icon lucide-file-text"
-            >
-              <path
-                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-              />
-              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-              <path d="M10 9H8" />
-              <path d="M16 13H8" />
-              <path d="M16 17H8" />
-            </svg>
-          </a>
+          <hr class="border border-border" />
         </div>
       </div>
+      <p class="text-center text-gray">
+        "Just one experience so far, <br />
+        but limitless drive to learn, build, and grow into the developer I aim
+        to be."
+      </p>
     </section>
-    <section class="py-[100px] px-[30px] flex flex-col gap-[120px]">
+    <!-- More About Vishwajeet Section -->
+    <section class="pt-[120px] pb-[100px] px-[30px] flex flex-col gap-[120px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>03</p>
+        <p>//Who Am I</p>
+        <p class="text-gray">Since 2002</p>
+      </div>
+      <div class="flex flex-col justify-between items-center gap-[50px]">
+        <h3 class="text-[90px] font-semibold leading-[90%] text-center">
+          More About <br />
+          <span class="text-[120px]">Vishwajeet</span>
+        </h3>
+        <div class="">
+          <div class="w-[500px] rounded-[10px] overflow-hidden">
+            <img
+              class="h-full w-full object-cover"
+              src="./assets/images/vishwajeet_portfolio.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-[30px] items-center">
+          <p
+            class="text-2xl font-semibold text-center w-[70%] leading-none tracking-[1px]"
+          >
+            I'M A VERSATILE FULL-STACK MERN DEVELOPER FROM INDIA.<br />
+            MY PASSION FOR CRAFTING SCALABLE SYSTEMS, CLEAN CODE, AND INTUITIVE
+            USER EXPERIENCES SHINES THROUGH IN EVERY PROJECT I DELIVER.
+          </p>
+          <p
+            class="normal-case text-lg text-gray w-[65%] text-center leading-[17px] tracking-[2px]"
+          >
+            Whether that's extending capabilities with Chrome plugins,
+            automating workflows with no‑code/AI tools, or architecting scalable
+            systems. With an insatiable curiosity, I embrace unconventional
+            approaches, believing that the right perspective can elevate code
+            into meaningful experiences that truly resonate.
+          </p>
+        </div>
+        <a
+          href="#contact"
+          class="border flex items-center gap-2 hover:text-black border-white py-3 px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-['Contact Now'] before:text-black before:h-full before:w-full before:bg-white"
+          >Resume
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text-icon lucide-file-text"
+          >
+            <path
+              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+            />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <!-- What I Bring Section -->
+    <section class="py-[100px] px-[30px] flex flex-col gap-[80px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>04</p>
+        <p>//Code & Beyond</p>
+        <p class="text-gray">Programmer</p>
+      </div>
       <div class="flex items-end justify-between">
         <h3 class="text-[120px] font-semibold leading-[90%] text-start">
           What <br />
           I Bring
         </h3>
-        <p class="text-lg normal-case leading-[20px] tracking-[1px]">
-          Technologies I use to build <br />seamless, scalable, <br />and modern
-          web solutions.
-        </p>
+        <div class="p-8 border border-border">
+          <p class="text-lg normal-case leading-[20px] tracking-[1px]">
+            Technologies I use to build <br />seamless, scalable, <br />and
+            modern web solutions.
+          </p>
+        </div>
       </div>
       <div class="flex justify-end">
         <ul class="w-[60%]" id="skills_list"></ul>
       </div>
     </section>
+    <!-- second Banner Image -->
+    <section class="pt-[120px] px-[30px]">
+      <div class="w-full h-[720px]">
+        <img
+          src="./assets/images/hero2_image.jpg"
+          class="w-full h-full object-cover rounded-[20px]"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- Voice Of Vishwajeet -->
+    <section class="pt-[120px] px-[30px] flex flex-col gap-[80px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>05</p>
+        <p>//Voice Of Vishu</p>
+        <p class="text-gray">Programmer</p>
+      </div>
+      <div
+        class="h-[60vh] pt-[40px] pb-[80px] flex flex-col items-center justify-center"
+      >
+        <p class="text-center text-5xl font-semibold tracking-[1px]">
+          Code is how I think. <br />
+          Growth is what I live for.
+        </p>
+        <div class="h-[100px] w-[100px]">
+          <img
+            src="./assets/images/signature.png"
+            class="h-full w-full object-cover"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section -->
+    <section class="pt-[120px] flex flex-col gap-[100px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>06</p>
+        <p>//Stats</p>
+        <p class="text-gray">Facts</p>
+      </div>
+      <div
+        class="border-y border-border py-[30px] px-[50px] flex justify-between"
+        id="stats_sections"
+      ></div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="pt-[120px] flex flex-col gap-[100px]">
+      <div class="flex items-center justify-between text-xs">
+        <p>07</p>
+        <p>//Testimonial</p>
+        <p class="text-gray">Voices</p>
+      </div>
+      <div class="flex flex-col gap-[80px]">
+        <h4 class="text-[34px] font-semibold text-center">What People Say</h4>
+        <div
+          id="testimonialsContainer"
+          class="flex gap-5 overflow-x-auto"
+          style="scrollbar-width: none"
+        ></div>
+      </div>
+    </section>
+    <!-- Height increase section -->
+    <section class="h-[100vh]"></section>
   </body>
 </html>
 <script>
@@ -380,24 +506,24 @@
   ).innerText = `@${new Date().getFullYear()} All Rights Reserved `;
   const cardsData = [
     {
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-compass"><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z" /><circle cx="12" cy="12" r="10" /></svg>`,
-      title: "Versatility",
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" class="lucide lucide-lightbulb"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12v1a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1a7 7 0 0 0-4-12z"/></svg>`,
+      title: "Problem Solver",
       description:
-        "Handled both front-end and back-end development seamlessly.",
+        "Designs logical, real-world solutions focused on clarity and performance.",
       indicators: [1, 0.3, 0.3],
     },
     {
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-puzzle"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z" /></svg>`,
-      title: "Problem-Solving",
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>`,
+      title: "Growth-Driven",
       description:
-        "Delivered efficient, scalable solutions under tight deadlines.",
+        "Continuously upgrading skills and embracing new technologies with curiosity.",
       indicators: [1, 1, 0.3],
     },
     {
-      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake-icon lucide-handshake"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>`,
-      title: "Mentorship",
+      icon: `<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" class="lucide lucide-rocket"><path d="M4.5 14.5 3 21l6.5-1.5"/><path d="M15 9l-6 6"/><path d="M16 8c1.7 1.7 4.3 1.7 6 0 1.7-1.7 1.7-4.3 0-6-1.7-1.7-4.3-1.7-6 0-1.7 1.7-1.7 4.3 0 6z"/><path d="m9 12-1 4 4-1"/></svg>`,
+      title: "Impact-Oriented Builder",
       description:
-        "Supported and trained junior developers to improve team capability.",
+        "Focused on creating meaningful, value-driven software solutions that scale.",
       indicators: [1, 1, 1],
     },
   ];
@@ -580,8 +706,8 @@
           </p>
         </div>
         <div id="dropdown_Icon" class="transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
-            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down">
             <path d="m6 9 6 6 6-6" />
           </svg>
@@ -600,8 +726,8 @@
           .map(
             (sub) => `
           <li class="text-xs text-gray font-medium flex items-center gap-[10px]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" 
-              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" 
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-check">
               <rect width="18" height="18" x="3" y="3" rx="2" />
               <path d="m9 12 2 2 4-4" />
@@ -622,5 +748,88 @@
       item.classList.toggle("h-[312px]!");
       item.querySelector("#dropdown_Icon > svg").classList.toggle("rotate-180");
     });
+  });
+  const stats = [
+    {
+      title: "04+",
+      subTitle: "Years Of Experience",
+    },
+    {
+      title: "1.5+",
+      subTitle: "Years Of Professional Experience",
+    },
+    {
+      title: "00",
+      subTitle: "Personal Projects",
+    },
+    {
+      title: "00",
+      subTitle: "DSA Questions Solved",
+    },
+  ];
+  const stats_sections = document.getElementById("stats_sections");
+  stats.forEach(({ title, subTitle }) => {
+    const span = document.createElement("span");
+    span.classList = " w-[235px] block text-center flex flex-col gap-2";
+    span.innerHTML = `<p class=" text-[88px] font-semibold leading-none">${title}</p>
+          <p class=" text-xs text-gray">${subTitle}</p>`;
+    stats_sections.appendChild(span);
+  });
+  const testimonials = [
+    {
+      name: "Manasi Naik",
+      position: "UX Designer, Dreams International",
+      userImage: "./assets/images/manasi.jpeg",
+      quoteImage:
+        "https://framerusercontent.com/images/N2H1r9tJg4F3PScC9UjipDKeY.svg",
+      message:
+        "Lorem ipsum dolor, lsje ushat sit amet consectetur adipisicing elit. Molestiae accusantium recusandae tenetur cupiditate dolor",
+    },
+    {
+      name: "ChatGPT",
+      position: "AI Agent",
+      userImage: "./assets/images/chatgpt.jpg",
+      quoteImage: "./assets/images/chatgptquote.png",
+      message:
+        "A visionary developer with strong skills, thinking, and leadership—building impactful digital solutions with precision and passion.",
+    },
+    {
+      name: "Om Javheri",
+      position: "MERN Stack Developer, Dreams International",
+      userImage: "./assets/images/omjavheri.jpeg",
+      quoteImage:
+        "https://framerusercontent.com/images/N2H1r9tJg4F3PScC9UjipDKeY.svg",
+      message:
+        "Lorem ipsum dolor, lsje ushat sit amet consectetur adipisicing elit. Molestiae accusantium recusandae tenetur cupiditate dolor",
+    },
+  ];
+  const testimonialsContainer = document.getElementById(
+    "testimonialsContainer"
+  );
+
+  testimonials.forEach((testimonial) => {
+    const card = document.createElement("div");
+    card.className =
+      "h-[330px] min-w-[528px]! border border-border rounded-[10px] py-[24px]!  overflow-hidden border-box px-[26px] flex flex-col gap-5";
+
+    card.innerHTML = `
+    <div class="flex items-center gap-[22px] ">
+      <div class="h-[60px] w-[60px]">
+        <img class="h-full w-full object-cover rounded-[10px]" src="${testimonial.userImage}" alt="${testimonial.name}" />
+      </div>
+      <div class="flex-1">
+        <h6 class="text-lg font-semibold">${testimonial.name}</h6>
+        <p class="text-xs font-medium text-gray">${testimonial.position}</p>
+      </div>
+      <div class="h-[60px] w-[60px]">
+        <img class="h-full w-full object-cover rounded-[10px]" src="${testimonial.quoteImage}" alt="quote" />
+      </div>
+    </div>
+    <div class="border border-border rounded-[10px] flex-1 flex items-center overflow-hidden px-7  border-box">
+      <h5 class="text-2xl font-semibold ">"${testimonial.message}"</h5>
+    </div>
+  `;
+
+    testimonialsContainer.appendChild(card);
   });
 </script>
