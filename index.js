@@ -342,7 +342,7 @@ const stats = [
 const stats_sections = document.getElementById("stats_sections");
 stats.forEach(({ title, subTitle }) => {
   const span = document.createElement("span");
-  span.classList = " w-[235px] block text-center flex flex-col gap-2";
+  span.classList = "w-[235px] block text-center flex flex-col gap-2";
   span.innerHTML = `<p class=" text-[88px] font-semibold leading-none">${title}</p>
           <p class=" text-xs text-gray">${subTitle}</p>`;
   stats_sections.appendChild(span);
@@ -380,7 +380,7 @@ const testimonialsContainer = document.getElementById("testimonialsContainer");
 testimonials.forEach((testimonial) => {
   const card = document.createElement("div");
   card.className =
-    "h-[330px] min-w-[528px]! border border-border rounded-[10px] py-[24px]!  overflow-hidden border-box px-[26px] flex flex-col gap-5";
+    "h-[330px] w-full min-w-[410px] border border-border rounded-[10px] py-[24px]!  overflow-hidden border-box px-[26px] flex flex-col gap-5";
 
   card.innerHTML = `
     <div class="flex items-center gap-[22px] ">
