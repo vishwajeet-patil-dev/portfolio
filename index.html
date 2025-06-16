@@ -26,7 +26,7 @@
       class="hidden h-[15px] w-[15px] z-9999999999999 bg-white fixed rounded-full"
     ></div>
     <section
-      class="container m-auto w-full max-w-[1493px] flex flex-col gap-[30px] overflow-x-hidden"
+      class="container m-auto w-full max-w-[1493px] flex flex-col gap-[30px] overflow-x-hidden px-[10px] lg:p-0"
     >
       <!-- Menu Section -->
       <section
@@ -84,11 +84,11 @@
         </div>
       </section>
       <!-- Main Section -->
-      <header class="py-[34px] px-[20px] lg:px-[30px]">
+      <header class="py-[34px] px-0 lg:px-[30px]">
         <nav
           class="text-white text-lg font-medium flex items-center justify-between"
         >
-          <p class="w-[160px]">
+          <p class="w-[157px]">
             <span class="opacity-[0.6]">Local /</span>
             <span id="local_time"></span>
           </p>
@@ -114,7 +114,7 @@
       </header>
       <!-- Hero Section -->
       <section class="flex flex-col gap-[60px]">
-        <div class="relative px-[20px] lg:px-[30px] border-box overflow-hidden">
+        <div class="relative px-0 lg:px-[30px] border-box overflow-hidden">
           <h1
             class="pl-2 leading-[80%] font-semibold text-[26vw] text-white tracking-[10px]"
           >
@@ -206,8 +206,10 @@
         </div>
       </section>
       <!-- Approch Section -->
-      <section class="py-[100px] flex flex-col gap-[120px]">
-        <div class="flex flex-col gap-[140px]">
+      <section
+        class="py-[60px] lg:py-[100px] flex flex-col gap-[60px] lg:gap-[120px]"
+      >
+        <div class="flex flex-col gap-[60px] lg:gap-[140px]">
           <div class="flex items-center justify-between text-xs">
             <p>01</p>
             <p>//Approach</p>
@@ -215,13 +217,13 @@
           </div>
           <div class="flex flex-col justify-between items-center gap-[30px]">
             <h3
-              class="flex text-[90px] font-semibold leading-[90%] text-center overflow-hidden"
+              class="flex text-[40px] lg:text-[90px] font-semibold leading-[90%] text-center overflow-hidden"
             >
               I'm Vishwajeet Patil Based in Pune, Maharashtra, <br />
               India
             </h3>
             <p
-              class="w-[40%] text-center normal-case text-lg text-gray tracking-[2px]"
+              class="max-w-[660px] leading-none text-center normal-case text-lg text-gray tracking-[2px]"
             >
               On a Mission to Build Intelligent, Real-Time, and User-Centric
               Software Solutions That Empower People and Businesses to Succeed
@@ -239,7 +241,7 @@
             </div>
           </div>
         </div>
-        <div id="cards-container" class="flex"></div>
+        <div id="cards-container" class="flex flex-col lg:flex-row"></div>
       </section>
       <!-- Skill Cards Section -->
       <section
@@ -248,40 +250,46 @@
         style="scrollbar-width: none"
       ></section>
       <!-- What I Bring Section -->
-      <section class="py-[100px] flex flex-col gap-[80px]">
+      <section class="py-[60px] lg:py-[100px] flex flex-col gap-[80px]">
         <div class="flex items-center justify-between text-xs">
           <p>04</p>
           <p>//Code & Beyond</p>
           <p class="text-gray">Programmer</p>
         </div>
         <div class="flex items-end justify-between">
-          <h3 class="text-[120px] font-semibold leading-[90%] text-start">
+          <h3
+            class="text-[50px] lg:text-[120px] font-semibold leading-[90%] text-start"
+          >
             What <br />
             I Bring
           </h3>
-          <div class="p-8 border border-border">
-            <p class="text-lg normal-case leading-[20px] tracking-[1px]">
+          <div class="p-2 lg:p-8 border border-border">
+            <p
+              class="text-xs lg:text-lg normal-case leading-[12px] lg:leading-[20px] tracking-none lg:tracking-[1px]"
+            >
               Technologies I use to build <br />seamless, scalable, <br />and
               modern web solutions.
             </p>
           </div>
         </div>
         <div class="flex justify-end">
-          <ul class="w-[60%]" id="skills_list"></ul>
+          <ul class="w-full lg:w-[60%]" id="skills_list"></ul>
         </div>
       </section>
       <!-- Experience -->
-      <section class="pt-[120px] pb-[100px] flex flex-col gap-[120px]">
+      <section
+        class="pt-[60px] lg:pt-[120px] pb-[40px] lg:pb-[100px] flex flex-col gap-[60px] lg:gap-[120px]"
+      >
         <div class="flex items-center justify-between text-xs">
           <p>02</p>
           <p>//Experience</p>
           <p class="text-gray">Since 2024</p>
         </div>
-        <div class="flex justify-between">
+        <div class="flex flex-col lg:flex-row gap-5 justify-between">
           <div class="">
             <h3 class="text-[34px] font-semibold">Experience</h3>
           </div>
-          <div class="w-[61%] flex flex-col gap-[60px]">
+          <div class="w-full lg:w-[61%] flex flex-col gap-5 lg:gap-[60px]">
             <hr class="border border-border" />
             <div class="flex flex-col gap-5">
               <h5 class="text-2xl font-semibold">Dreams International</h5>
