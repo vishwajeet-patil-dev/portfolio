@@ -449,3 +449,40 @@ document
 document.getElementById("back_to_top_btn").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+gsap.from("#first_header", {
+  y: "-100%",
+  duration: 0.5,
+  opacity: 0,
+  delay: 0.3,
+  ease: "power1.out",
+});
+gsap.from("#hero_section h1", {
+  y: "-100%",
+  duration: 0.5,
+  ease: "power1.out",
+});
+gsap.from("#hero_skills", {
+  y: "100%",
+  opacity: 0,
+  ease: "power1.out",
+});
+gsap.from("#hero_image", {
+  y: "10%",
+  opacity: 0,
+  duration: 0.3,
+  delay: 0.2,
+  ease: "power1.out",
+});
+gsap.from("#approch_section h3 span", {
+  y: "30%",
+  opacity: 0,
+  duration: 0.2,
+  delay: 0.1,
+  ease: "power1.out",
+  stagger: 0.1,
+  scrollTrigger: {
+    trigger: "#approch_section h3",
+    scroller: "body",
+  },
+});

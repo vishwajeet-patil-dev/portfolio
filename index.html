@@ -26,7 +26,7 @@
       class="hidden h-[15px] w-[15px] z-9999999999999 bg-white fixed rounded-full"
     ></div>
     <section
-      class="container m-auto w-full max-w-[1493px] flex flex-col gap-[30px] overflow-x-hidden px-[10px] lg:p-0"
+      class="container m-auto w-full max-w-[1493px] flex flex-col gap-[30px] overflow-hidden px-[10px] lg:p-0"
     >
       <!-- Menu Section -->
       <section
@@ -84,7 +84,10 @@
         </div>
       </section>
       <!-- Main Section -->
-      <header class="py-[34px] px-0 lg:px-[30px]">
+      <header
+        id="first_header"
+        class="border-b border-border py-[34px] px-0 lg:px-[30px]"
+      >
         <nav
           class="text-white text-lg font-medium flex items-center justify-between"
         >
@@ -109,11 +112,15 @@
               class="h-[4px] w-[4px] bg-white rounded-full absolute bottom-0 right-0"
             ></div>
           </div>
-          <span id="contact_btn"></span>
+          <span
+            id="contact_btn"
+            class="border border-white py-2 px-3 lg:py-3 lg:px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-[Contact Now] before:text-black before:h-full before:w-full before:bg-white text-sm lg:text-lg"
+            >Contact Now</span
+          >
         </nav>
       </header>
       <!-- Hero Section -->
-      <section class="flex flex-col gap-[60px]">
+      <section id="hero_section" class="flex flex-col gap-[60px]">
         <div class="relative px-0 lg:px-[30px] border-box overflow-hidden">
           <h1
             class="pl-2 leading-[80%] font-semibold text-[26vw] text-white tracking-[10px]"
@@ -122,6 +129,7 @@
           </h1>
         </div>
         <div
+          id="hero_skills"
           class="flex flex-col gap-[40px] lg:flex-row items-center justify-around"
         >
           <div class="flex flex-col items-center gap-2">
@@ -197,7 +205,7 @@
           </div>
         </div>
         <!--Hero Image  -->
-        <div class="w-full h-[490px] lg:h-[690px] px-[30px]">
+        <div id="hero_image" class="w-full h-[490px] lg:h-[690px] px-[30px]">
           <img
             src="./assets/images/vishwajeet_hero_bg.png"
             class="h-full w-full object-cover rounded-[20px]"
@@ -207,6 +215,7 @@
       </section>
       <!-- Approch Section -->
       <section
+        id="approch_section"
         class="py-[60px] lg:py-[100px] flex flex-col gap-[60px] lg:gap-[120px]"
       >
         <div class="flex flex-col gap-[60px] lg:gap-[140px]">
@@ -217,10 +226,16 @@
           </div>
           <div class="flex flex-col justify-between items-center gap-[30px]">
             <h3
-              class="flex text-[40px] lg:text-[90px] font-semibold leading-[90%] text-center overflow-hidden"
+              class="flex gap-2 flex-wrap items-center justify-center w-full text-[40px] lg:text-[90px] font-semibold leading-[90%] text-center overflow-hidden"
             >
-              I'm Vishwajeet Patil Based in Pune, Maharashtra, <br />
-              India
+              <span>I'm</span>
+              <span>Vishwajeet</span>
+              <span>Patil</span>
+              <span>Based</span>
+              <span>in</span> <span>Pune</span><span>,</span>
+              <span>Maharashtra</span><span>,</span>
+              <br />
+              <span>India</span>
             </h3>
             <p
               class="max-w-[660px] leading-none text-center normal-case text-lg text-gray tracking-[2px]"
@@ -351,51 +366,49 @@
             />
           </div>
         </div>
-        <div class=" flex flex-col gap-[30px] items-center">
-            <p
-              class="text-lg lg:text-2xl font-semibold text-center w-full max-w-[1060px] leading-none tracking-[1px]"
-            >
-              I'M A VERSATILE FULL-STACK MERN DEVELOPER FROM INDIA.<br />
-              MY PASSION FOR CRAFTING SCALABLE SYSTEMS, CLEAN CODE, AND
-              INTUITIVE USER EXPERIENCES SHINES THROUGH IN EVERY PROJECT I
-              DELIVER.
-            </p>
-            <p
-              class="normal-case text-sm lg:text-lg text-gray w-full max-w-[960px] text-center leading-none lg:leading-[17px] tracking-[2px]"
-            >
-              Whether that's extending capabilities with Chrome plugins,
-              automating workflows with no‑code/AI tools, or architecting
-              scalable systems. With an insatiable curiosity, I embrace
-              unconventional approaches, believing that the right perspective
-              can elevate code into meaningful experiences that truly resonate.
-            </p>
+        <div class="flex flex-col gap-[30px] items-center">
+          <p
+            class="text-lg lg:text-2xl font-semibold text-center w-full max-w-[1060px] leading-none tracking-[1px]"
+          >
+            I'M A VERSATILE FULL-STACK MERN DEVELOPER FROM INDIA.<br />
+            MY PASSION FOR CRAFTING SCALABLE SYSTEMS, CLEAN CODE, AND INTUITIVE
+            USER EXPERIENCES SHINES THROUGH IN EVERY PROJECT I DELIVER.
+          </p>
+          <p
+            class="normal-case text-sm lg:text-lg text-gray w-full max-w-[960px] text-center leading-none lg:leading-[17px] tracking-[2px]"
+          >
+            Whether that's extending capabilities with Chrome plugins,
+            automating workflows with no‑code/AI tools, or architecting scalable
+            systems. With an insatiable curiosity, I embrace unconventional
+            approaches, believing that the right perspective can elevate code
+            into meaningful experiences that truly resonate.
+          </p>
         </div>
         <a
-            href="#contact"
-            class="w-fit  m-auto border flex items-center gap-2 hover:text-black border-white py-3 px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-['Contact Now'] before:text-black before:h-full before:w-full before:bg-white"
-            >Resume
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-file-text-icon lucide-file-text"
-            >
-              <path
-                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-              />
-              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-              <path d="M10 9H8" />
-              <path d="M16 13H8" />
-              <path d="M16 17H8" />
-            </svg>
+          href="#contact"
+          class="w-fit m-auto border flex items-center gap-2 hover:text-black border-white py-3 px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-['Contact Now'] before:text-black before:h-full before:w-full before:bg-white"
+          >Resume
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-file-text-icon lucide-file-text"
+          >
+            <path
+              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+            />
+            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+            <path d="M10 9H8" />
+            <path d="M16 13H8" />
+            <path d="M16 17H8" />
+          </svg>
         </a>
-        </div>
       </section>
       <!-- second Banner Image -->
       <section class="pt-0! lg:pt-[120px]">
@@ -408,16 +421,18 @@
         </div>
       </section>
       <!-- Voice Of Vishwajeet -->
-      <section class="pt-[60px] lg:pt-[120px] flex flex-col gap-[40px]! lg:gap-[80px]">
+      <section
+        class="pt-[60px] lg:pt-[120px] flex flex-col gap-[40px]! lg:gap-[80px]"
+      >
         <div class="flex items-center justify-between text-xs">
           <p>05</p>
           <p>//Voice Of Vishu</p>
           <p class="text-gray">Programmer</p>
         </div>
-        <div
-          class="h-[60vh] flex flex-col items-center justify-center"
-        >
-          <p class="text-center text-2xl lg:text-5xl font-semibold tracking-[1px]">
+        <div class="h-[60vh] flex flex-col items-center justify-center">
+          <p
+            class="text-center text-2xl lg:text-5xl font-semibold tracking-[1px]"
+          >
             Code is how I think. <br />
             Growth is what I live for.
           </p>
@@ -432,14 +447,18 @@
       </section>
 
       <!-- Testimonial Section -->
-      <section class=" pt-[60px] lg:pt-[120px] flex flex-col gap-[60px] lg:gap-[100px]">
-        <div class=" flex items-center justify-between text-xs">
+      <section
+        class="pt-[60px] lg:pt-[120px] flex flex-col gap-[60px] lg:gap-[100px]"
+      >
+        <div class="flex items-center justify-between text-xs">
           <p>07</p>
           <p>//Testimonial</p>
           <p class="text-gray">Voices</p>
         </div>
-        <div class=" flex flex-col gap-[40px] lg:gap-[80px]">
-          <h4 class="text-[28px] lg:text-[34px] font-semibold text-center">What People Say</h4>
+        <div class="flex flex-col gap-[40px] lg:gap-[80px]">
+          <h4 class="text-[28px] lg:text-[34px] font-semibold text-center">
+            What People Say
+          </h4>
           <div
             id="testimonialsContainer"
             class="flex gap-5 overflow-x-auto"
@@ -448,21 +467,25 @@
         </div>
       </section>
       <!-- Contact Us Section -->
-      <section class=" pt-[60px] lg:pt-[120px] flex flex-col gap-[60px] lg:gap-[100px]">
-        <div class=" flex items-center justify-between text-xs">
+      <section
+        class="pt-[60px] lg:pt-[120px] flex flex-col gap-[60px] lg:gap-[100px]"
+      >
+        <div class="flex items-center justify-between text-xs">
           <p>08</p>
           <p>//Get in Touch</p>
           <p class="text-gray">Reach Out</p>
         </div>
-        <div class=" flex flex-col gap-[40px] lg:gap-[80px]">
-          <div class=" flex flex-col items-center gap-[40px]">
-            <h4 class="text-5xl lg:text-[120px] font-semibold text-center leading-none lg:leading-[94px]">
+        <div class="flex flex-col gap-[40px] lg:gap-[80px]">
+          <div class="flex flex-col items-center gap-[40px]">
+            <h4
+              class="text-5xl lg:text-[120px] font-semibold text-center leading-none lg:leading-[94px]"
+            >
               Let’s Work <br />
               Together
             </h4>
             <span id="contact_btn"></span>
           </div>
-          <div class=" flex flex-col items-center gap-4 lg:gap-8">
+          <div class="flex flex-col items-center gap-4 lg:gap-8">
             <h4
               class="text-lg lg:text-2xl font-semibold text-center w-full max-w-[1000px] leading-none"
             >
@@ -477,11 +500,13 @@
         </div>
       </section>
       <!-- Footer section -->
-      <section class=" pt-[60px] lg:pt-[120px] flex flex-col">
-        <h1 class=" text-[12vw] tracking-none lg:tracking-[8px] leading-none font-semibold text-center">
+      <section class="pt-[60px] lg:pt-[120px] flex flex-col">
+        <h1
+          class="text-[12vw] tracking-none lg:tracking-[8px] leading-none font-semibold text-center"
+        >
           Vishwajeet
         </h1>
-        <div class=" flex items-center justify-between">
+        <div class="flex items-center justify-between">
           <h5 class="text-xs lg:text-lg font-semibold">
             © 2025 Vishwajeet. All Rights Reserved.
           </h5>
@@ -493,110 +518,116 @@
           </h5>
         </div>
       </section>
-            <!-- Contact Form Section -->
-            <section
-            id="contact_form_section"
-            class="z-1 fixed top-[100%] transition-all duration-300 ease-in-out bg-black m-auto w-full h-[100vh] max-w-[1493px] flex flex-col overflow-auto"
+      <!-- Contact Form Section -->
+      <section
+        id="contact_form_section"
+        class="z-1 fixed top-[100%] transition-all duration-300 ease-in-out bg-black m-auto w-full h-[100vh] max-w-[1493px] flex flex-col overflow-auto"
+      >
+        <header class="py-[34px] px-[20px] lg:px-[30px]">
+          <nav
+            class="text-white text-lg font-medium flex items-center justify-between"
           >
-            <header class="py-[34px] px-[20px] lg:px-[30px] ">
-              <nav
-                class="text-white text-lg font-medium flex items-center justify-between"
-              >
-                <p class="w-[157px]">
-                  <span class="opacity-[0.6]">Local /</span>
-                  <span id="local_time"></span>
-                </p>
-                <div
-                  id="contact_section_close_btn"
-                  class="relative h-[50px] w-[50px] p-4 rounded-[50px] bg-black text-white group color-black hover:bg-white transition-all duration-150 ease-in-out"
-                >
-                  <div
-                    class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-40"
-                  ></div>
-                  <div
-                    class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-320"
-                  ></div>
-                </div>
-                <span id="contact_btn"></span>
-              </nav>
-            </header>
-            <div class=" flex-1 flex flex-col lg:flex-row px-[40px] pt-[50px] gap-[20px] lg:gap-[60px]">
-              <div class=" flex-1 flex flex-col gap-[60px]">
-                <div class="">
-                  <p class="text-5xl font-semibold">Ring A Bell!</p>
-                  <p class="text-lg font-medium text-gray w-[70%]">
-                    Reach out and let's create something amazing together. Let's
-                    achieve greatness.
-                  </p>
-                </div>
-                <div class="flex flex-col gap-6">
-                  <h5 class="text-2xl font-semibold">Fill This Form Out</h5>
-                  <form action="" class="flex flex-col gap-4">
-                    <input
-                      type="text"
-                      class="p-6 bg-gray-dark text-white text-base rounded-[10px]"
-                      placeholder="Name*"
-                    /><input
-                      type="text"
-                      class="p-6 bg-gray-dark text-base rounded-[10px]"
-                      placeholder="Email*"
-                    />
-                    <textarea
-                      class="p-6 bg-gray-dark text-base rounded-[10px]"
-                      placeholder="Message*"
-                      rows="5"
-                    ></textarea>
-                    <button
-                      class="p-6 bg-white text-base text-black rounded-[10px]"
-                    >
-                      <p
-                        class="text-black normal-case rounded-[10px] font-medium"
-                      >
-                        Submit Now
-                      </p>
-                    </button>
-                  </form>
-                </div>
-              </div>
-              <div class=" h-[70vh] overflow-hidden">
-                <img
-                  src="./assets/images/Vishwajeet Patil.png"
-                  alt=""
-                  class="h-full object-contain rounded-[20px]"
-                />
-              </div>
-          </div>
-          <div
-            class=" px-[30px] pt-[10px] pb-[40px] flex items-center justify-between"
-          >
+            <p class="w-[157px]">
+              <span class="opacity-[0.6]">Local /</span>
+              <span id="local_time"></span>
+            </p>
+            <div
+              id="contact_section_close_btn"
+              class="relative h-[50px] w-[50px] p-4 rounded-[50px] bg-black text-white group color-black hover:bg-white transition-all duration-150 ease-in-out"
+            >
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-40"
+              ></div>
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-320"
+              ></div>
+            </div>
+            <span id="contact_btn"></span>
+          </nav>
+        </header>
+        <div
+          class="flex-1 flex flex-col lg:flex-row px-[40px] pt-[50px] gap-[20px] lg:gap-[60px]"
+        >
+          <div class="flex-1 flex flex-col gap-[60px]">
             <div class="">
-              <p class="text-white text-lg font-medium" id="rights_text"></p>
+              <p class="text-5xl font-semibold">Ring A Bell!</p>
+              <p class="text-lg font-medium text-gray w-[70%]">
+                Reach out and let's create something amazing together. Let's
+                achieve greatness.
+              </p>
             </div>
-            <div class="flex items-center gap-[30px]">
-              <p
-                class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
-              >
-                Linkedin
-              </p>
-              <p
-                class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
-              >
-                Instagram
-              </p>
-              <p
-                class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
-              >
-                Raddit
-              </p>
+            <div class="flex flex-col gap-6">
+              <h5 class="text-2xl font-semibold">Fill This Form Out</h5>
+              <form action="" class="flex flex-col gap-4">
+                <input
+                  type="text"
+                  class="p-6 bg-gray-dark text-white text-base rounded-[10px]"
+                  placeholder="Name*"
+                /><input
+                  type="text"
+                  class="p-6 bg-gray-dark text-base rounded-[10px]"
+                  placeholder="Email*"
+                />
+                <textarea
+                  class="p-6 bg-gray-dark text-base rounded-[10px]"
+                  placeholder="Message*"
+                  rows="5"
+                ></textarea>
+                <button
+                  class="p-6 bg-white text-base text-black rounded-[10px]"
+                >
+                  <p class="text-black normal-case rounded-[10px] font-medium">
+                    Submit Now
+                  </p>
+                </button>
+              </form>
             </div>
           </div>
-          </section>
+          <div class="h-[70vh] overflow-hidden">
+            <img
+              src="./assets/images/Vishwajeet Patil.png"
+              alt=""
+              class="h-full object-contain rounded-[20px]"
+            />
+          </div>
+        </div>
+        <div
+          class="px-[30px] pt-[10px] pb-[40px] flex items-center justify-between"
+        >
+          <div class="">
+            <p class="text-white text-lg font-medium" id="rights_text"></p>
+          </div>
+          <div class="flex items-center gap-[30px]">
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Linkedin
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Instagram
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Raddit
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   </body>
 </html>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
   integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+  integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
