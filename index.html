@@ -265,19 +265,24 @@
         style="scrollbar-width: none"
       ></section>
       <!-- What I Bring Section -->
-      <section class="py-[60px] lg:py-[100px] flex flex-col gap-[80px]">
+      <section
+        id="what_i_bring_section"
+        class="py-[60px] lg:py-[100px] flex flex-col gap-[80px]"
+      >
         <div class="flex items-center justify-between text-xs">
           <p>04</p>
           <p>//Code & Beyond</p>
           <p class="text-gray">Programmer</p>
         </div>
         <div class="flex items-end justify-between">
-          <h3
-            class="text-[50px] lg:text-[120px] font-semibold leading-[90%] text-start"
-          >
-            What <br />
-            I Bring
-          </h3>
+          <div class="relative overflow-hidden">
+            <h3
+              class="text-[50px] lg:text-[120px] font-semibold leading-[90%] text-start"
+            >
+              What <br />
+              I Bring
+            </h3>
+          </div>
           <div class="p-2 lg:p-8 border border-border">
             <p
               class="text-xs lg:text-lg normal-case leading-[12px] lg:leading-[20px] tracking-none lg:tracking-[1px]"
@@ -344,6 +349,7 @@
       </section>
       <!-- More About Vishwajeet Section -->
       <section
+        id="who_am_i_section"
         class="pt-[60px] lg:pt-[120px] pb-[40px] lg:pb-[100px] flex flex-col gap-[40px] lg:gap-[120px]"
       >
         <div class="flex items-center justify-between text-xs">
@@ -358,6 +364,8 @@
             More About <br />
             <span class="text-6xl lg:text-[120px]">Vishwajeet</span>
           </h3>
+        </div>
+        <div class="flex flex-col gap-[30px] items-center">
           <div class="w-full max-w-[500px] px-[20px] overflow-hidden">
             <img
               class="h-full w-full object-cover rounded-[10px]"
@@ -365,8 +373,6 @@
               alt=""
             />
           </div>
-        </div>
-        <div class="flex flex-col gap-[30px] items-center">
           <p
             class="text-lg lg:text-2xl font-semibold text-center w-full max-w-[1060px] leading-none tracking-[1px]"
           >
@@ -383,32 +389,33 @@
             approaches, believing that the right perspective can elevate code
             into meaningful experiences that truly resonate.
           </p>
+          <a
+            href="./assets/Vishwajeet_Resume_1.0.pdf"
+            download="Vishwajeet Resume"
+            class="w-fit m-auto border flex items-center gap-2 hover:text-black hover:bg-white border-white py-3 px-5 rounded-full font-semibold"
+            >Resume
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-file-text-icon lucide-file-text"
+            >
+              <path
+                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+              />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M10 9H8" />
+              <path d="M16 13H8" />
+              <path d="M16 17H8" />
+            </svg>
+          </a>
         </div>
-        <a
-          href="#contact"
-          class="w-fit m-auto border flex items-center gap-2 hover:text-black border-white py-3 px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-['Contact Now'] before:text-black before:h-full before:w-full before:bg-white"
-          >Resume
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-file-text-icon lucide-file-text"
-          >
-            <path
-              d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-            />
-            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-            <path d="M10 9H8" />
-            <path d="M16 13H8" />
-            <path d="M16 17H8" />
-          </svg>
-        </a>
       </section>
       <!-- second Banner Image -->
       <section class="pt-0! lg:pt-[120px]">
@@ -619,6 +626,7 @@
     </section>
   </body>
 </html>
+<script src="./index.js"></script>
 <script
   src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
   integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
@@ -631,4 +639,30 @@
   crossorigin="anonymous"
   referrerpolicy="no-referrer"
 ></script>
-<script src="./index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="./gsap.js"></script>
+<script>
+  const section = document.getElementById("skills_section");
+
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  // Determine full scrollable width
+  const maxX = section.scrollWidth - section.clientWidth;
+
+  // Create the auto-scroll tween
+  const autoTween = gsap.to(section, {
+    scrollTo: { x: maxX },
+    ease: "none",
+    duration: 40, // adjust to speed
+    repeat: -1,
+    yoyo: true, // scrolls forward then backward; remove for looping back-to-start
+  });
+
+  // Pause on hover or manual scroll
+  ["mouseenter", "wheel", "touchstart"].forEach((event) =>
+    section.addEventListener(event, () => autoTween.pause())
+  );
+  ["mouseleave", "touchend"].forEach((event) =>
+    section.addEventListener(event, () => autoTween.resume())
+  );
+</script>
