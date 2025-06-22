@@ -306,31 +306,23 @@ document.querySelectorAll("#skills_list > li").forEach((item) => {
   });
 });
 const stats = [
-  {
-    title: "04+",
-    subTitle: "Years Of Experience",
-  },
-  {
-    title: "1.5+",
-    subTitle: "Years Of Professional Experience",
-  },
-  {
-    title: "00",
-    subTitle: "Personal Projects",
-  },
-  {
-    title: "00",
-    subTitle: "DSA Questions Solved",
-  },
+  { title: 4, subTitle: "Years Of Experience" },
+  { title: 1.5, subTitle: "Years Of Professional Experience" },
+  { title: 3, subTitle: "Personal Projects" },
+  // { title: 00, subTitle: "DSA Questions Solved" },
 ];
+
 const stats_sections = document.getElementById("stats_sections");
 stats.forEach(({ title, subTitle }) => {
   const span = document.createElement("span");
   span.classList = "w-[235px] block text-center flex flex-col gap-2";
-  span.innerHTML = `<p class=" text-[88px] font-semibold leading-none">${title}</p>
-          <p class=" text-xs text-gray">${subTitle}</p>`;
+  span.innerHTML = `
+    <p class="stat-number text-[88px] font-semibold leading-none" data-target="${title}">0</p>
+    <p class="text-xs text-gray">${subTitle}</p>
+  `;
   stats_sections.appendChild(span);
 });
+
 const testimonials = [
   {
     name: "Manasi Naik",

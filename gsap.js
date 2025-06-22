@@ -82,3 +82,31 @@ gsap.from("#what_i_bring_section h3", {
     start: "top 60%",
   },
 });
+
+const numbers = document.querySelectorAll(".stat-number");
+
+numbers.forEach((el) => {
+  const target = +el.getAttribute("data-target");
+  const decimal = target % 1 !== 0;
+
+  gsap.fromTo(
+    el,
+    { innerText: 0 },
+    {
+      innerText: target,
+      duration: 2,
+      ease: "power1.out",
+      snap: { innerText: decimal ? 0.1 : 1 },
+      scrollTrigger: {
+        trigger: el,
+        start: "top 80%", // when element comes into view
+        once: true,
+      },
+      onUpdate: function () {
+        el.innerText = decimal
+          ? Number(el.innerText).toFixed(1)
+          : Math.floor(el.innerText);
+      },
+    }
+  );
+});
