@@ -69,7 +69,7 @@ gsap
     {
       y: "-300px",
     },
-    0
+    0,
   );
 gsap.from("#what_i_bring_section h3", {
   y: "40%",
@@ -86,7 +86,13 @@ gsap.from("#what_i_bring_section h3", {
 const numbers = document.querySelectorAll(".stat-number");
 
 numbers.forEach((el) => {
-  const target = +el.getAttribute("data-target");
+  const running = el.dataset.running === "true";
+  if (!running) {
+    el.innerText = el.dataset.target;
+    return;
+  }
+  const target = Number(el.dataset.target);
+  if (Number.isNaN(target)) return;
   const decimal = target % 1 !== 0;
 
   gsap.fromTo(
@@ -107,6 +113,6 @@ numbers.forEach((el) => {
           ? Number(el.innerText).toFixed(1)
           : Math.floor(el.innerText);
       },
-    }
+    },
   );
 });

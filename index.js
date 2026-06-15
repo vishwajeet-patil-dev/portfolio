@@ -57,9 +57,8 @@ menu_links.forEach(({ title, path }) => {
   });
   menuLinksUl.append(a);
 });
-document.getElementById(
-  "rights_text"
-).innerText = `@${new Date().getFullYear()} All Rights Reserved `;
+document.getElementById("rights_text").innerText =
+  `@${new Date().getFullYear()} All Rights Reserved `;
 const cardsData = [
   {
     icon: `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1" class="lucide lucide-lightbulb"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12v1a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-1a7 7 0 0 0-4-12z"/></svg>`,
@@ -94,7 +93,7 @@ cardsData.forEach((card) => {
   const indicatorsHTML = card.indicators
     .map(
       (opacity) =>
-        `<span class="aspect-square w-[10px] rounded-full bg-white block opacity-[${opacity}]"></span>`
+        `<span class="aspect-square w-[10px] rounded-full bg-white block opacity-[${opacity}]"></span>`,
     )
     .join("");
 
@@ -116,45 +115,14 @@ cardsData.forEach((card) => {
   container.appendChild(cardDiv);
 });
 const skills = [
-  { title: "HTML" },
-  { title: "CSS" },
-  { title: "Tailwind CSS" },
-  { title: "JavaScript" },
-  { title: "React.js" },
-  { title: "Next.js" },
-  { title: "Node.js" },
-  { title: "Express.js" },
-  { title: "MongoDB" },
-  { title: "Mongoose" },
-  { title: "Socket.IO" },
-  { title: "REST APIs" },
-  { title: "JWT Authentication" },
-  { title: "OAuth" },
-  { title: "Stripe Integration" },
-  { title: "Razorpay Integration" },
-  { title: "PayPal Integration" },
-  { title: "PhonePe Integration" },
-  { title: "Puppeteer" },
-  { title: "Chrome Extensions" },
-  { title: "VS Code Extensions" },
-  { title: "Git" },
-  { title: "GitHub" },
-  { title: "Linux (Fedora)" },
-  { title: "C++" },
   { title: "DSA" },
+  { title: "Javascript" },
+  { title: "Python" },
+  { title: "Java" },
+  { title: "Full Stack Development" },
   { title: "System Design" },
-  { title: "Operating System" },
-  { title: "DBMS" },
-  { title: "Networking" },
-  { title: "OOPs" },
-  { title: "Postman" },
-  { title: "AWS S3" },
-  { title: "Google Vision API" },
-  { title: "Email Templates" },
-  { title: "Webhooks" },
-  { title: "API Development" },
-  { title: "VS Code" },
-  { title: "Figma (Basic)" },
+  { title: "DevOps" },
+  { title: "Embedded Programing" },
 ];
 
 const skills_section = document.getElementById("skills_section");
@@ -248,7 +216,7 @@ skillsData.forEach((skill, index) => {
             (_, i) =>
               `<span class="aspect-square w-[10px] rounded-full bg-white block opacity-[${
                 i <= index ? "1" : "0.3"
-              }]"></span>`
+              }]"></span>`,
           )
           .join("")}
       </div>
@@ -289,7 +257,7 @@ skillsData.forEach((skill, index) => {
               <path d="m9 12 2 2 4-4" />
             </svg>
             <p>${sub}</p>
-          </li>`
+          </li>`,
           )
           .join("")}
       </ul>
@@ -306,22 +274,89 @@ document.querySelectorAll("#skills_list > li").forEach((item) => {
   });
 });
 const stats = [
-  { title: 4, subTitle: "Years Of Experience" },
-  { title: 1.5, subTitle: "Years Of Professional Experience" },
-  { title: 3, subTitle: "Personal Projects" },
+  { title: "3", subTitle: "Years of Engineering", running: true },
+  { title: "100000", subTitle: "+ Lines Of Code", running: true },
+  { title: "∞", subTitle: "Passion for Building", running: false },
   // { title: 00, subTitle: "DSA Questions Solved" },
 ];
 
 const stats_sections = document.getElementById("stats_sections");
-stats.forEach(({ title, subTitle }) => {
+stats.forEach(({ title, subTitle, running }) => {
   const span = document.createElement("span");
   span.classList = "w-[235px] block text-center flex flex-col gap-2";
   span.innerHTML = `
-    <p class="stat-number text-[88px] font-semibold leading-none" data-target="${title}">0</p>
+    <p class="stat-number text-[88px] font-semibold leading-none" data-target="${title}" data-running="${running}">0</p>
     <p class="text-xs text-gray">${subTitle}</p>
   `;
   stats_sections.appendChild(span);
 });
+const experiences = [
+  {
+    company: "Nutran ESSPods India Pvt. Ltd. ",
+    role: "Software Engineer",
+    duration: "July 2025 - Current",
+    description:
+      "As A Software Engineer responsible for implementing new features, and maintaining critical system functionality. In addition to software development, I have contributed to system engineering initiatives by enhancing deployment architectures, automating installation and configuration processes, improving infrastructure reliability, optimizing operational workflows, and supporting large-scale distributed systems. Through continuous process improvements and automation, I have helped reduce manual effort, increase system stability, and improve overall deployment efficiency.",
+  },
+  {
+    company: "Dreams International",
+    role: "MERN Stack Developer",
+    duration: "Jan 2024 - Jun 2025",
+    description:
+      "Led both frontend and backend development, integrated payment gateways and real-time systems, mentored junior developers, and played a key role in delivering scalable SaaS products for global clients.",
+  },
+];
+
+const section = document.getElementById("experience-section");
+
+const experienceCards = experiences
+  .map(
+    (exp) => `
+      <hr class="border border-border" />
+
+      <div class="flex flex-col gap-5">
+        <h5 class="text-2xl font-semibold">${exp.company}</h5>
+
+        <div class="flex items-center justify-between">
+          <p class="text-xs tracking-[1px]">${exp.role}</p>
+
+          <p class="text-xs text-gray tracking-[1px]">
+            ${exp.duration}
+          </p>
+        </div>
+
+        <p class="tracking-none text-lg text-gray normal-case">
+          ${exp.description}
+        </p>
+      </div>
+    `,
+  )
+  .join("");
+
+section.innerHTML = `
+  <div class="flex items-center justify-between text-xs">
+    <p>02</p>
+    <p>//Experience</p>
+    <p class="text-gray">Since 2024</p>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-5 justify-between">
+    <div>
+      <h3 class="text-[34px] font-semibold">Experience</h3>
+    </div>
+
+    <div class="w-full lg:w-[61%] flex flex-col gap-5 lg:gap-[60px]">
+      ${experienceCards}
+      <hr class="border border-border" />
+    </div>
+  </div>
+
+  <p class="text-center text-gray">
+    "Just one experience so far, <br />
+    but limitless drive to learn, build, and grow into the developer I aim
+    to be."
+  </p>
+`;
 
 const testimonials = [
   {
