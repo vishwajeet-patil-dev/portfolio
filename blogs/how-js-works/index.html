@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwajeet Patil | Software Developer</title>
+    <link rel="stylesheet" href="../../assets/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-white: var(--color-white);
+        --color-black: var(--color-black);
+        --color-border: var(--color-border);
+        --color-gray: var(--color-gray);
+        --color-gray-dark: var(--color-gray-dark);
+        --color-red: var(--color-red);
+        --color-green: var(--color-green);
+        --color-blue: var(--color-blue);
+        --color-orange: var(--color-orange);
+      }
+    </style>
+  </head>
+  <body class="cursor-none bg-black text-white uppercase font-medium">
+    <div
+      id="cursor"
+      class="hidden h-[15px] w-[15px] z-[999999] bg-white fixed rounded-full"
+    ></div>
+    <section
+      class="container m-auto w-full max-w-[1493px] flex flex-col gap-[30px] overflow-hidden px-[10px] lg:p-0"
+    >
+      <!-- Menu Section -->
+      <section
+        id="menu_section"
+        class="z-1 fixed top-[100%] transition-all duration-300 ease-in-out bg-black m-auto w-full h-[100vh]! max-w-[1493px] flex flex-col"
+      >
+        <header class="py-[34px] px-[20px] lg:px-[30px]">
+          <nav class="text-white text-lg flex items-center justify-between">
+            <p class="w-[165px]">
+              <span class="opacity-[0.6]">Local /</span>
+              <span id="local_time"></span>
+            </p>
+            <div
+              id="menu_section_close_btn"
+              class="relative h-[50px] w-[50px] p-4 rounded-[50px] bg-black text-white group color-black hover:bg-white transition-all duration-150 ease-in-out"
+            >
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-40"
+              ></div>
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-320"
+              ></div>
+            </div>
+            <span id="contact_btn" class=""></span>
+          </nav>
+        </header>
+        <div class="flex-1 flex items-center justify-center">
+          <ul id="menu_links" class="flex flex-col items-center"></ul>
+        </div>
+        <div
+          class="px-[30px] pt-[10px] pb-[40px] flex flex-col lg:flex-row gap-3 justify-between"
+        >
+          <div class="text-center lg:text-start">
+            <p class="text-white text-lg font-medium" id="rights_text"></p>
+          </div>
+          <div
+            class="flex items-center justify-center lg:justify-end gap-[30px]"
+          >
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Linkedin
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Instagram
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Raddit
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Main Section -->
+      <header
+        id="first_header"
+        class="border-b border-border py-[34px] px-0 lg:px-[30px]"
+      >
+        <nav
+          class="text-white text-lg font-medium flex items-center justify-between"
+        >
+          <p class="w-[157px]">
+            <span class="opacity-[0.6]">Local /</span>
+            <span id="local_time"></span>
+          </p>
+          <div
+            id="menu_section_open_btn"
+            class="relative h-[18px] w-[18px] hover:rotate-45 transition-all duration-150 ease-in-out"
+          >
+            <div
+              class="h-[4px] w-[4px] bg-white rounded-full absolute top-0 left-0"
+            ></div>
+            <div
+              class="h-[4px] w-[4px] bg-white rounded-full absolute top-0 right-0"
+            ></div>
+            <div
+              class="h-[4px] w-[4px] bg-white rounded-full absolute bottom-0 left-0"
+            ></div>
+            <div
+              class="h-[4px] w-[4px] bg-white rounded-full absolute bottom-0 right-0"
+            ></div>
+          </div>
+          <span
+            id="contact_btn"
+            class="border border-white py-2 px-3 lg:py-3 lg:px-5 rounded-full font-semibold overflow-hidden relative before:rounded-full before:absolute before-z-[-1] before:top-[100%] hover:before:top-[0%] before:text-black before:transition-all before:duration-150 before:ease-in-out before:left-0 before:content-[Contact Now] before:text-black before:h-full before:w-full before:bg-white text-sm lg:text-lg"
+            >Contact Now</span
+          >
+        </nav>
+      </header>
+
+      <!-- Article Hero -->
+      <!-- Article Hero -->
+      <section
+        class="border border-border rounded-[20px] p-[40px] lg:p-[80px] flex flex-col gap-[40px]"
+      >
+        <div class="flex items-center justify-between text-xs">
+          <p>01</p>
+          <p>//Article</p>
+          <p class="text-gray">JavaScript</p>
+        </div>
+
+        <h1 class="text-5xl lg:text-[120px] font-semibold leading-[90%]">
+          HOW <br />
+          JAVASCRIPT <br />
+          WORKS
+        </h1>
+
+        <div class="flex gap-4 flex-wrap">
+          <span class="border border-border px-4 py-2 rounded-full">
+            JavaScript
+          </span>
+
+          <span class="border border-border px-4 py-2 rounded-full">
+            Event Loop
+          </span>
+
+          <span class="border border-border px-4 py-2 rounded-full">
+            Async Programming
+          </span>
+        </div>
+        <div
+          class="normal-case text-lg text-gray leading-[34px] flex flex-col gap-6"
+        >
+          ```
+          <div>
+            <p>
+              JavaScript is a single-threaded, synchronous language. But why do
+              most developers love JavaScript even though it is slower compared
+              to some other programming languages? Sometimes people do not even
+              consider it a traditional programming language, yet it remains
+              extremely popular.
+            </p>
+
+            <p class="mt-4">
+              In this article, we are going to see how JavaScript manages to
+              handle both synchronous and asynchronous tasks. You may wonder,
+              "But you said JavaScript is synchronous." By the end of this
+              article, you will have the answer.
+            </p>
+
+            <p class="mt-4">
+              We are not going to talk about the history of JavaScript or other
+              related topics. We will focus only on how JavaScript works.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              JavaScript Engine
+            </h2>
+
+            <p>The main part of JavaScript is the JavaScript Engine.</p>
+
+            <p class="mt-4">
+              We know that JavaScript code, like many other programming
+              languages, is written in an English-like syntax. The JavaScript
+              Engine first parses the code, breaks it into tokens, and converts
+              it into an AST (Abstract Syntax Tree). It then compiles the AST
+              and executes it.
+            </p>
+
+            <p class="mt-4">
+              A common question is: Is JavaScript an interpreted language or a
+              compiled language?
+            </p>
+
+            <p class="mt-4">
+              A few years ago, the answer was simple: JavaScript was considered
+              an interpreted language. However, modern JavaScript engines use a
+              JIT (Just-In-Time) Compiler, which improves performance during
+              execution.
+            </p>
+
+            <p class="mt-4">
+              The JavaScript Engine starts compiling the code and then begins
+              execution. While executing, it can optimize the code and recompile
+              parts of it to improve performance.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Execution Context
+            </h2>
+
+            <p>
+              To execute code, JavaScript uses something called an Execution
+              Context.
+            </p>
+
+            <p class="mt-4">
+              An Execution Context is an environment used to run a piece of
+              code. JavaScript is a scripting language and can run in different
+              environments.
+            </p>
+
+            <ul class="list-disc ml-8 mt-4">
+              <li>Browser Environment</li>
+              <li>Node.js Environment</li>
+            </ul>
+
+            <p class="mt-4">
+              Node.js allows JavaScript to run on the server side. In this
+              article, we will mainly focus on the browser environment.
+            </p>
+
+            <p class="mt-4">
+              An Execution Context is a container that holds everything required
+              for code execution, such as variables, functions, and objects.
+            </p>
+
+            <p class="mt-4">
+              There are mainly two types of Execution Contexts:
+            </p>
+
+            <ol class="list-decimal ml-8 mt-4">
+              <li>Global Execution Context (GEC)</li>
+              <li>Function Execution Context (FEC)</li>
+            </ol>
+
+            <div class="bg-[#111] border border-border rounded-[20px] p-6 mt-6">
+              ```
+
+              <pre><code>console.log("Hello World");</code></pre>
+
+              ```
+            </div>
+
+            <p class="mt-4">
+              This code runs inside the Global Execution Context.
+            </p>
+
+            <p class="mt-4">
+              Whenever a function is invoked, JavaScript creates a new Function
+              Execution Context for it.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Phases of Execution Context
+            </h2>
+
+            <p>Every Execution Context has two phases:</p>
+
+            <ol class="list-decimal ml-8 mt-4">
+              <li>Memory Creation Phase</li>
+              <li>Code Execution Phase</li>
+            </ol>
+
+            <h3 class="text-white text-2xl font-semibold mt-8 mb-4">
+              Memory Creation Phase
+            </h3>
+
+            <p>
+              In this phase, JavaScript scans the entire code of the current
+              context and allocates memory for variables and functions.
+            </p>
+
+            <ul class="list-disc ml-8 mt-4">
+              <li>
+                Variables declared with var are initialized with undefined.
+              </li>
+              <li>
+                Functions are stored with their complete function definitions.
+              </li>
+              <li>Objects and other declarations are allocated memory.</li>
+            </ul>
+
+            <div class="bg-[#111] border border-border rounded-[20px] p-6 mt-6">
+              ```
+
+              <pre><code>console.log(a);
+var a = 10;</code></pre>
+
+              ```
+            </div>
+
+            <p class="mt-4">
+              This prints undefined because JavaScript performs memory
+              allocation before execution.
+            </p>
+
+            <p class="mt-4">This behavior is commonly known as Hoisting.</p>
+
+            <h3 class="text-white text-2xl font-semibold mt-8 mb-4">
+              Code Execution Phase
+            </h3>
+
+            <p>
+              Once memory creation is complete, JavaScript starts executing the
+              code line by line.
+            </p>
+
+            <p class="mt-4">To do this, JavaScript uses a Call Stack.</p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Call Stack
+            </h2>
+
+            <p>The Call Stack is used to manage execution contexts.</p>
+
+            <ol class="list-decimal ml-8 mt-4">
+              <li>
+                The Global Execution Context is pushed into the Call Stack
+                first.
+              </li>
+              <li>Function contexts are pushed when functions are invoked.</li>
+              <li>Nested functions create additional execution contexts.</li>
+              <li>The most recently added context executes first.</li>
+              <li>All function contexts are eventually removed.</li>
+              <li>The Global Execution Context is removed last.</li>
+            </ol>
+
+            <p class="mt-4">
+              When the Call Stack becomes empty and there is nothing left to
+              execute, the program execution is complete.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Asynchronous JavaScript
+            </h2>
+
+            <p>
+              JavaScript itself is synchronous, but it runs inside environments
+              such as browsers. The browser provides additional features that
+              enable asynchronous behavior.
+            </p>
+
+            <ul class="list-disc ml-8 mt-4">
+              <li>Web APIs</li>
+              <li>Callback Queue</li>
+              <li>Microtask Queue</li>
+              <li>Event Loop</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Event Loop
+            </h2>
+
+            <p>
+              The Event Loop continuously watches the Call Stack. Whenever the
+              Call Stack becomes empty, it moves tasks from the queues into the
+              Call Stack for execution.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Web APIs
+            </h2>
+
+            <ul class="list-disc ml-8">
+              <li>setTimeout</li>
+              <li>setInterval</li>
+              <li>DOM Events</li>
+              <li>addEventListener</li>
+              <li>Geolocation</li>
+              <li>Fetch API</li>
+            </ul>
+
+            <div class="bg-[#111] border border-border rounded-[20px] p-6 mt-6">
+              ```
+
+              <pre><code>setTimeout(() => {
+  console.log("Hello");
+}, 5000);</code></pre>
+
+              ```
+            </div>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Callback Queue
+            </h2>
+
+            <p>
+              The Callback Queue follows the First In, First Out (FIFO)
+              principle.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Promises and the Microtask Queue
+            </h2>
+
+            <div class="bg-[#111] border border-border rounded-[20px] p-6">
+              ```
+
+              <pre><code>fetch("api-url")
+  .then((data) => {
+    console.log(data);
+  });</code></pre>
+
+              ```
+            </div>
+
+            <p class="mt-4">
+              When the Promise is fulfilled or rejected, the callback attached
+              using .then() is placed into the Microtask Queue.
+            </p>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Priority of Microtask Queue
+            </h2>
+
+            <ol class="list-decimal ml-8">
+              <li>Execute synchronous code.</li>
+              <li>Empty the Microtask Queue completely.</li>
+              <li>Execute one callback from the Callback Queue.</li>
+              <li>Check the Microtask Queue again.</li>
+              <li>Repeat.</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2
+              class="text-white text-3xl lg:text-5xl font-semibold uppercase mb-6"
+            >
+              Execution Priority
+            </h2>
+
+            <ol class="list-decimal ml-8">
+              <li>Call Stack</li>
+              <li>Microtask Queue</li>
+              <li>Callback Queue</li>
+            </ol>
+
+            <p class="mt-4">
+              The Event Loop continuously coordinates between these components.
+            </p>
+
+            <p class="mt-4">
+              This is how the JavaScript environment enables asynchronous
+              programming while JavaScript itself remains a single-threaded,
+              synchronous language.
+            </p>
+          </div>
+          ```
+        </div>
+      </section>
+
+      <!-- Contact Us Section -->
+      <section
+        class="pt-[60px] lg:pt-[120px] flex flex-col gap-[60px] lg:gap-[100px]"
+      >
+        <div class="flex items-center justify-between text-xs">
+          <p>02</p>
+          <p>//Get in Touch</p>
+          <p class="text-gray">Reach Out</p>
+        </div>
+        <div class="flex flex-col gap-[40px] lg:gap-[80px]">
+          <div class="flex flex-col items-center gap-[40px]">
+            <h4
+              class="text-5xl lg:text-[120px] font-semibold text-center leading-none lg:leading-[94px]"
+            >
+              Let’s Work <br />
+              Together
+            </h4>
+            <span id="contact_btn"></span>
+          </div>
+          <div class="flex flex-col items-center gap-4 lg:gap-8">
+            <h4
+              class="text-lg lg:text-2xl font-semibold text-center w-full max-w-[1000px] leading-none"
+            >
+              BASED IN Pune, I AM A PASSIONATE FULL-STACK DEVELOPER. MY LOVE FOR
+              CLEAN CODE, SCALABLE ARCHITECTURE, AND USER-CENTRIC DESIGN
+              REFLECTS IN EVERY PROJECT I BUILD.
+            </h4>
+            <div>
+              <span class="social_links" id="linkedin"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer section -->
+      <section class="pt-[60px] lg:pt-[120px] flex flex-col">
+        <h1
+          class="text-[11vw] tracking-none lg:tracking-[8px] leading-none font-semibold text-center"
+        >
+          Vishwajeet
+        </h1>
+        <div class="flex items-center justify-between">
+          <h5 class="text-xs lg:text-lg font-semibold">
+            © 2025 Vishwajeet. All Rights Reserved.
+          </h5>
+          <h5
+            id="back_to_top_btn"
+            class="text-xs lg:text-lg font-semibold after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+          >
+            Back To Top
+          </h5>
+        </div>
+      </section>
+      <!-- Contact Form Section -->
+      <section
+        id="contact_form_section"
+        class="z-1 fixed top-[100%] transition-all duration-300 ease-in-out bg-black m-auto w-full h-[100vh] max-w-[1493px] flex flex-col overflow-auto"
+      >
+        <header class="py-[34px] px-[20px] lg:px-[30px]">
+          <nav
+            class="text-white text-lg font-medium flex items-center justify-between"
+          >
+            <p class="w-[157px]">
+              <span class="opacity-[0.6]">Local /</span>
+              <span id="local_time"></span>
+            </p>
+            <div
+              id="contact_section_close_btn"
+              class="relative h-[50px] w-[50px] p-4 rounded-[50px] bg-black text-white group color-black hover:bg-white transition-all duration-150 ease-in-out"
+            >
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-40"
+              ></div>
+              <div
+                class="h-[20px] w-[1px] p-0 m-0 absolute bg-white group-hover:bg-black top-1/2 left-1/2 transform -translate-1/2 rotate-320"
+              ></div>
+            </div>
+            <span id="contact_btn"></span>
+          </nav>
+        </header>
+        <div
+          class="flex-1 flex flex-col lg:flex-row px-[40px] pt-[50px] gap-[20px] lg:gap-[60px]"
+        >
+          <div class="flex-1 flex flex-col gap-[60px]">
+            <div class="">
+              <p class="text-5xl font-semibold">Ring A Bell!</p>
+              <p class="text-lg font-medium text-gray w-[70%]">
+                Reach out and let's create something amazing together. Let's
+                achieve greatness.
+              </p>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h5 class="text-2xl font-semibold">Fill This Form Out</h5>
+              <form action="" class="flex flex-col gap-4">
+                <input
+                  type="text"
+                  class="p-6 bg-gray-dark text-white text-base rounded-[10px]"
+                  placeholder="Name*"
+                /><input
+                  type="text"
+                  class="p-6 bg-gray-dark text-base rounded-[10px]"
+                  placeholder="Email*"
+                />
+                <textarea
+                  class="p-6 bg-gray-dark text-base rounded-[10px]"
+                  placeholder="Message*"
+                  rows="5"
+                ></textarea>
+                <button
+                  class="p-6 bg-white text-base text-black rounded-[10px]"
+                >
+                  <p class="text-black normal-case rounded-[10px] font-medium">
+                    Submit Now
+                  </p>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="h-[70vh] overflow-hidden">
+            <img
+              src="../../assets/images/Vishwajeet Patil.png"
+              alt=""
+              class="h-full object-contain rounded-[20px]"
+            />
+          </div>
+        </div>
+        <div
+          class="px-[30px] pt-[10px] pb-[40px] flex items-center justify-between"
+        >
+          <div class="">
+            <p class="text-white text-lg font-medium" id="rights_text"></p>
+          </div>
+          <div class="flex items-center gap-[30px]">
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Linkedin
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Instagram
+            </p>
+            <p
+              class="text-white text-lg font-medium after:content-[''] relative after:w-[0%] hover:after:w-full after:transition-all after:duration-300 after:ease-in-out after:h-[3px] after:absolute after:bottom-0 after:left-0 after:bg-white"
+            >
+              Raddit
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
+<script src="../../index.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+  integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+  integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+<script src="../../gsap.js"></script>
